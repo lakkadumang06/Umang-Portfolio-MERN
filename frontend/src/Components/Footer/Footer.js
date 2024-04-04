@@ -8,13 +8,15 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { CiLocationOn, CiPhone, CiMail } from "react-icons/ci";
 import axios from 'axios';
 
+const BASE_URL = process.env.BASE_URL;
+
 
 function Footer() {
     const [maildata, setmaildata] = useState("");
 
     const sendmailhandler = async () => {
         try {
-            let response = await axios.post('http://localhost:4000', { email: maildata });
+            let response = await axios.post(`${BASE_URL}`, { email: maildata });
             console.log(response);
             setmaildata("");
         } catch (error) {

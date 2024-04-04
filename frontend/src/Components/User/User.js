@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import axios from 'axios';
+const BASE_URL = process.env.BASE_URL;
 
 function User() {
 
@@ -16,7 +17,7 @@ function User() {
 
     const sendmailinfohandler = async () => {
         try {
-            let response = await axios.post('http://localhost:4000/info', { name, email, phone, message });
+            let response = await axios.post(`${BASE_URL}/info`, { name, email, phone, message });
             console.log(response);
             setName("");
             setEmail("");
