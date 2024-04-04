@@ -1,0 +1,121 @@
+#Education {
+    background-color: var(--bg2-color);
+}
+
+.educ-heading h4 {
+    color: var(--theme-color);
+    font-size: 20px;
+}
+
+.educ-heading h3 {
+    color: var(--white-color);
+    font-size: 48px;
+}
+
+.years .time {
+    color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    display: inline-block;
+    font-size: 20px;
+}
+
+.years h4 {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.years p {
+    font-size: 16px;
+    color: var(--graytype-color);
+
+}
+
+.course h6 {
+    font-size: 16px;
+    color: var(--theme-color);
+}
+
+.tf__team_skills_bar_single {
+    color: var(--white-color);
+    /* background: #151c25; */
+}
+
+.barfiller {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: 0 0;
+    border: none;
+}
+
+.barfiller .fill {
+    display: block;
+    height: 100%;
+    z-index: 1;
+    background: var(--theme-color);
+}
+
+.skill {
+    color: var(--white-color);
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillinner {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #565656;
+    border-radius: 85px;
+    padding: 54px 0 48px 0;
+    margin-bottom: 20px;
+    transition: .7s;
+}
+
+.skill .skillinner .icon {
+    font-size: 50px;
+    transition: .7s;
+}
+
+.skill .skillinner h6 {
+    font-size: 24px;
+    color: var(--theme-color);
+    transition: .7s;
+}
+
+.skill:hover .skillinner {
+    border: 2px solid var(--theme-color);
+    transition: .7s;
+}
+
+.skill:hover .skillinner .icon {
+    transition: .7s;
+    color: var(--theme-color);
+}
+
+.skill:hover .skillinner h6 {
+    transition: .7s;
+    color: var(--white-color);
+}
+
+.skill:hover .skillinner {
+    transition: .7s;
+    transform: scale(1.1);
+}
+.skill:hover .skillinner .icon{
+    transform: rotateY(360deg);
+}
+
+@media (max-width:426px) {
+    .educ-heading h3{
+        font-size: 28px;
+    }
+    .educ-heading h4 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,112 @@
+.newuser {
+    position: relative;
+    background: url(../../assests/asset\ 18.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 120px 0px;
+    text-align: center;
+    color: var(--white-color);
+    width: 100vh;
+}
+
+.newuser::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.newuser h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+}
+
+.newuser .input {
+    position: relative;
+    border: 1px solid var(--theme-color);
+    display: inline-block;
+    justify-content: center;
+}
+
+.newuser .input input {
+    color: var(--white-color);
+    background-color: transparent;
+    border: transparent;
+    padding: 20px 40px 20px 10px;
+}
+
+.newuser .input button {
+    border: transparent;
+    padding: 10px 20px;
+    margin: 0px 10px 0px 0px;
+    background-color: var(--theme-color);
+}
+.newuser .input button:hover{
+    transition: .5s;
+    background-color: var(--white-color);
+}
+@media (max-width:426px) {
+    .newuser h3 {
+        font-size: 24px;
+    }
+
+    .newuser .input input {
+        padding: 10px 20px 10px 5px;
+    }
+
+    .newuser .input button {
+        padding: 5px 10px;
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+#mypersonalinfo {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+}
+
+.mypersonalinfo .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: var(--black-color);
+    background-color: var(--theme-color);
+}
+
+.mypersonalinfo h4 {
+    font-size: 32px;
+    color: var(--theme-color);
+}
+
+.mypersonalinfo a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.copyright {
+    border-top: 1px solid #fff1;
+    margin-top: 75px;
+    padding: 35px 0px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--graytype-color);
+    transition: .5s;
+
+}
+
+.copyright a:hover {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: .5s;
+}

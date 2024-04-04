@@ -1,0 +1,124 @@
+#About {
+    background-color: var(--bg-color);
+}
+
+.about {
+    padding: 140px 0px 50px;
+}
+
+.aboutheading h5 {
+    font-size: 20px;
+    color: var(--theme-color);
+}
+
+.aboutheading h4 {
+    font-size: 48px;
+    color: var(--white-color);
+}
+
+.aboutheading p {
+    color: var(--graytype-color);
+}
+
+.aboutheading p {
+    padding-left: 110px;
+    position: relative;
+}
+
+.aboutheading p::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: var(--graytype-color);
+    top: 30%;
+    left: 0;
+}
+.aboutpic .img{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.aboutpic .img::after {
+    position: absolute;
+    content: "";
+    background: var(--theme-color);
+    width: 100%;
+    height: 90%;
+    top: -8%;
+    left: 10%;
+    z-index: -1;
+}
+.about_img_text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #232323;
+    padding: 15px 30px;
+    width: 280px;
+    color: var(--white-color);
+    color: var(--white-color);
+}
+.about_img_text h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.icon{
+    font-size: 40px;
+}
+
+@media (max-width:1025px) {
+    .aboutpic{
+        padding-top: 100px;
+    }
+}
+@media (max-width:768px) {
+    .aboutheading p::after{
+        display: none;
+    }
+    .aboutheading p {
+        padding-left: 0px;
+    }
+    .about {
+        padding: 70px 0px 30px;
+    }
+}
+@media (max-width:426px) {
+    .aboutpic{
+        padding-top: 100px;
+    }
+    .aboutheading h5 {
+        font-size: 18px;
+    }    
+    .aboutheading h4 {
+        font-size: 30px;
+    }
+    .aboutheading p {
+        font-size: 12px;
+    }    
+    .aboutheading button{
+        font-size: 12px;
+    }
+    .dowload-icon{
+        display: none;
+    }
+    .aboutpic .img {
+        transform: scale(0.8);
+    }
+    .about {
+        padding: 0px 0px 20px;
+    }
+    .aboutpic{
+        padding-top: 50px;
+    }
+}
+@media (max-width:376px) {
+    .aboutpic .img {
+        transform: scale(0.6);
+    }
+    .aboutpic{
+        padding-top: 0px;
+    }
+    
+}

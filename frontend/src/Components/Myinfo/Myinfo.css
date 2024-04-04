@@ -1,0 +1,86 @@
+#Myinfo {
+    background: url('../../assests/myinfoback.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.myinfo-detail {
+    width: 80%;
+}
+
+.myinfo-detail h2 {
+    font-size: 60px;
+    color: var(--white-color);
+}
+
+.myinfo-detail h2 span {
+    color: var(--theme-color);
+}
+
+.myinfo-detail p {
+    color: var(--graytype-color);
+}
+.myinfo-btn button a{
+    color: black !important;
+    text-decoration: none;
+}
+
+.btn1 {
+    border-radius: 20px;
+    background-color: var(--theme-color);
+    border: transparent;
+}
+
+.btn2 {
+    color: var(--white-color);
+    border: none;
+    background-color: transparent;
+}
+
+.videoicon {
+    font-size: 28px;
+}
+
+.myinfo-pic {
+    position: relative;
+}
+
+.mypic {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myinfo-pic img {
+    width: 100%;
+    transform: scale(0.8);
+    object-fit: cover;
+}
+
+@media (max-width:1025px) {
+    .myinfo-detail h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:769px) {
+    .myinfo-detail {
+        width: 100%;
+    }
+
+    .myinfo-detail h2 {
+        font-size: 30px;
+    }
+    .myinfo-detail p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:426px) {
+    .myinfo-detail {
+        text-align: center;
+    }
+}

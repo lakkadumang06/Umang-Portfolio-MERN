@@ -1,0 +1,107 @@
+#User{
+    background-color: #02050A;
+    color: var(--white-color);
+}
+.design_text {
+    margin-top: 85px;
+}
+.design_text h2 {
+    font-size: 128px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.design_text h2 span {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: unset;
+}
+.design_text p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.design_counter {
+    background: var(--bg2-color);
+    margin-top: 25px;
+    text-align: center;
+    padding: 40px;
+}
+.design_counter .icon {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.design_counter h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.design_counter h3 span {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+.design_counter p {
+    font-size: 18px;
+    color: var(--white-color);
+}
+.design_form h2{
+    font-size: 40px;
+}
+.design_form{
+    background: var(--bg2-color);
+}
+.design_form input{
+    width: 100%;
+    margin-top: 30px;
+    background: none;
+    border: 1px solid var(--theme-color) !important;
+    padding: 22px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.design_form textarea
+{
+    border: 1px solid var(--theme-color) !important;
+    padding: 22px 20px;
+    color: var(--white-color);
+}
+.design_form .btn{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.design_form button{
+    background-color: var(--theme-color);
+    padding: 15px 30px;
+    transition: .5s;
+}
+.design_form button:hover{
+    transition: .5s;
+    background-color: var(--white-color);
+    padding: 15px 30px;
+}
+
+@media (max-width:426px) {
+    .design_text h2 {
+        font-size: 80px;
+        line-height: 30px;
+    }
+    .design_text h2 span {
+        font-size: 30px;
+    }
+    .design_text p{
+        font-size: 16px;
+    }
+    .design_form h2 {
+        font-size: 32px;
+    }
+}

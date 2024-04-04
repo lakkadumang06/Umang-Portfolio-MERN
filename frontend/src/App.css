@@ -1,0 +1,49 @@
+.img-100 {
+  width: 100%;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none !important;
+}
+
+:root{
+  --theme-color: #55E6A5;
+  --graytype-color: #A2A2A2;
+  --bg-color:#02050A;
+  --bg2-color:#09101A;
+  --white-color:white;
+  --black-color: black;
+}
+/* :root {
+  --theme-color: #d4a373;
+  --graytype-color: #e9edc9;
+  --bg-color: #faedcd;
+  --white-color: black;
+  --black-color: white;
+  --blacktype-color: #fefae0;
+
+} */
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button:hover{
+  transition: .5s;
+  background-color: var(--white-color);
+  color: black;
+}
