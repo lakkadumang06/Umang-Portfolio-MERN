@@ -1,5 +1,6 @@
 
 var usermodel = require('../model/sendmailmodel');
+var usermodelinfo = require('../model/sendmailinfomodel');
 
 //Send Mail To Gmail
 var nodemailer = require('nodemailer');
@@ -48,7 +49,7 @@ exports.insert_info = async (req, res) => {
         var email = req.body.email;
         var phone = req.body.phone;
         var message = req.body.message;
-        var data = await usermodel.create({ name, email, phone, message });
+        var data = await usermodelinfo.create({ name, email, phone, message });
         var mailOptions = {
             from: email,
             to: 'lakkadumang306@gmail.com',
@@ -82,6 +83,22 @@ exports.get_data = async (req, res) => {
 
     try {
         var data = await usermodel.find();
+        res.status(200).json({
+            status: data,
+        })
+    }
+    catch {
+        res.status(500).json({
+            status: "Error !!!"
+        })
+    }
+
+}
+
+exports.get_data_info = async (req, res) => {
+
+    try {
+        var data = await usermodelinfo.find();
         res.status(200).json({
             status: data,
         })

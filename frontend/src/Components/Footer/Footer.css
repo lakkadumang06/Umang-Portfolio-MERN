@@ -1,3 +1,14 @@
+.modal-header {
+    justify-content: space-around;
+    padding: 0;
+    border: 1px solid var(--theme-color);
+    border-radius: var(--bs-modal-inner-border-radius);
+}
+.modal-footer{
+    padding: 5px ;
+    background-color: var(--bs-modal-footer-bg);
+    border-top: 0;
+}
 .newuser {
     position: relative;
     background: url(../../assests/asset\ 18.jpeg);
@@ -62,6 +73,9 @@
     .newuser .input button {
         padding: 5px 10px;
         margin: 0px 5px 0px 0px;
+    }
+    .modal-header .modal-tital{
+        font-size: 10px;
     }
 }
 

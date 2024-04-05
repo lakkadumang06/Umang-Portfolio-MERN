@@ -1,0 +1,1 @@
+export const baseurl = "https://fragile-ray-top-hat.cyclic.app/"

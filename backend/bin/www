@@ -9,17 +9,13 @@ var debug = require('debug')('backend:server');
 var http = require('http');
 
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-require('dotenv').config();
-
-mongoose.connect(process.env.MONGO_DB_URL).then(() => console.log('MongoDB Connected!!!'));
-
-
+mongoose.connect('mongodb+srv://lakkadumang306:umang306@cluster0.dc1ism1.mongodb.net/PortfolioMail')
+  .then(() => console.log('Connected!'));
 /**
  * Get port from environment and store in Express.
  */
-
 
 var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
