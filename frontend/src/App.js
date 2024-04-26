@@ -8,7 +8,6 @@ import Education from './Components/Education/Education';
 import User from './Components/User/User';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
-import axios from 'axios';
 
 
 function App() {

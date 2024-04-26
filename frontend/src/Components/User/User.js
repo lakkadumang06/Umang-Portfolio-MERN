@@ -7,13 +7,10 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import axios from 'axios';
 import { baseurl } from '../../urls';
+import Swal from 'sweetalert2';
 
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 // const BASE_URL = process.env.BASE_URL;
 function User() {
-    const [Show, setShow] = useState(false);
-
     const [Name, setName] = useState("");
     const [Email, setEmail] = useState("");
     const [Phone, setPhone] = useState("");
@@ -27,34 +24,19 @@ function User() {
             setEmail("");
             setPhone("");
             setMessage("");
-            setShow(true)
+            Swal.fire({
+                title: "Good job!",
+                text: "Your info was Send!",
+                icon: "success"
+              });
         } catch (error) {
             console.error(error);
         }
     }
-    const handleClose = () => setShow(false);
 
     return (
         <>
             <section id="User">
-                <Modal
-                    size="md"
-                    show={Show}
-                    onHide={() => setShow(false)}
-                    aria-labelledby="example-modal-sizes-title-sm"
-                    style={{ color: "var(--theme-color)" }}
-                >
-                    <Modal.Header style={{ background: "var(--bg2-color)" }}>
-                        <Modal.Title id="example-modal-sizes-title-sm" style={{ textAlign: "center" }}>
-                            Email Sent Successfully ...!!!
-                        </Modal.Title>
-                        <Modal.Footer>
-                            <Button style={{ background: "var(--theme-color)", color: "var(--bg2-color)" }} onClick={handleClose}>
-                                Close
-                            </Button>
-                        </Modal.Footer>
-                    </Modal.Header>
-                </Modal>
                 <div className="container">
                     <div className="user">
                         <div className="row">

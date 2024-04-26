@@ -10,6 +10,7 @@ import Modal from 'react-bootstrap/Modal';
 import { CiLocationOn, CiPhone, CiMail } from "react-icons/ci";
 import axios from 'axios';
 import { baseurl } from '../../urls';
+import Swal from 'sweetalert2';
 
 
 function Footer() {
@@ -18,36 +19,23 @@ function Footer() {
 
     const sendmailhandler = async () => {
         try {
+            // let response = await axios.post(`${baseurl}`, { email: maildata });
             let response = await axios.post(`${baseurl}`, { email: maildata });
             console.log(response);
             setmaildata("");
             setShow(true)
+            Swal.fire({
+                title: "Good job!",
+                text: "You Notification Send!",
+                icon: "success"
+              });
         } catch (error) {
             console.error(error);
         }
     }
-    const handleClose = () => setShow(false);
     return (
         <>
             <section id="Footer">
-                <Modal
-                    size="md"
-                    show={Show}
-                    onHide={() => setShow(false)}
-                    aria-labelledby="example-modal-sizes-title-sm"
-                    style={{ color: "var(--theme-color)" }}
-                >
-                    <Modal.Header style={{ background: "var(--bg2-color)" }}>
-                        <Modal.Title id="example-modal-sizes-title-sm" style={{ textAlign: "center" }}>
-                            Email Sent Successfully ...!!!
-                        </Modal.Title>
-                        <Modal.Footer>
-                            <Button style={{ background: "var(--theme-color)", color: "var(--bg2-color)" }} onClick={handleClose}>
-                                Close
-                            </Button>
-                        </Modal.Footer>
-                    </Modal.Header>
-                </Modal>
                 <div className="footer">
                     <AnimationOnScroll animateIn="animate__fadeInUp">
                         <div className="row w-100 m-0 newuser">

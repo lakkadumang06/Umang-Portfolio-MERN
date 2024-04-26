@@ -15,6 +15,7 @@ exports.insert = async (req, res) => {
 
     try {
         var email = req.body.email;
+        console.log(email)
         var data = await usermodel.create({ email });
         var mailOptions = {
             from: email,
@@ -50,6 +51,8 @@ exports.insert_info = async (req, res) => {
         var phone = req.body.phone;
         var message = req.body.message;
         var data = await usermodelinfo.create({ name, email, phone, message });
+   
+
         var mailOptions = {
             from: email,
             to: 'lakkadumang306@gmail.com',
@@ -84,7 +87,7 @@ exports.get_data = async (req, res) => {
     try {
         var data = await usermodel.find();
         res.status(200).json({
-            status: data,
+            status: data
         })
     }
     catch {
